@@ -1,0 +1,14 @@
+{{extend 'layout.html'}}
+<div>
+    <p>
+      Total IP address : <span>{{=len(ip_lst)}}</span>
+    </p>
+    <p>
+      Usable IP address : <span>{{=ip_lst[0]}}</span> to <span>{{=ip_lst[-1]}}</span>
+    </p>
+</div>
+<div>
+    <table>
+        <th><b>IPAddress</b></th>
+    </table>
+</div>

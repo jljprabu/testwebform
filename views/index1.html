@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TSIM</title>
+	
+	<script src="{{=URL('static','js/jquery.js')}}"></script>
+	<script src="{{=URL('static','js/mk_js.js')}}"></script>
+	<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.css">
+	<script type="text/javascript">
+
+	</script>
+</head>
+<body>
+
+<!-- extending frm web2py starts here -->
+	{{include}}
+<!-- extending frm web2py ends here -->
+</div>
+
+<script>
+	$(".ui.form").form({
+    on: 'blur',
+    inline : true,
+    fields: {
+      frm_vm_owner: {
+        identifier  : 'frm_vm_owner',
+        rules: [
+          {
+            type   : 'empty',
+            prompt : 'Owner Name Missing'
+          }
+        ]
+      }
+	}
+});
+
+	
+</script>	
+
+</body>
+</html>

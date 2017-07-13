@@ -1,0 +1,3 @@
+def hello():
+    form = SQLFORM(db.vminventory)
+    return locals()

@@ -1,0 +1,85 @@
+{{extend 'index1.html'}}
+<div class="ui container">
+    <div class="ui secondary pointing menu">    
+        <a class="active item">
+        <i class="large home icon"></i>
+        Build Request
+        </a>
+    </div>
+<br>
+<br>
+    <div class="ui form">
+        
+            <div class="content">
+            <h4 class="ui dividing header">Business Information</h4>
+                <div class="three fields">
+                    <div class="field"> 
+                            <h5 class="ui header">Business Type</h5>
+                            <div class="ui buttons">
+                              <button class="ui button" data-value="INV" id="biz_typ_inv">Investments</button>
+                              <div class="or"></div>
+                              <button class="ui button" data-value="MS" id="biz_typ_ms">Member Services</button>
+                            </div>
+                    </div>
+                    <div class="field">
+                            <h5 class="ui header">VM Owner </h5>
+                            <div class="ui labeled input" >
+                              <input type="text" id="frm_vm_owner">
+                              
+                            </div>
+                    </div>
+                    <div class="field">
+                            <h5 class="ui header">Cost Center </h5>
+                            <div class="ui labeled input" >
+                              <input type="text" placeholder="Cost Center" id="frm_cost_cntr" required>
+                            </div>
+                    </div>
+                    <div class="field">
+                            <h5 class="ui header">Environment Request Number </h5>
+                            <div class="ui labeled input" >
+                            <div class="ui label"> ENVR
+                            </div>
+                              <input type="text" pattern="\d{7}" id="frm_env_req" class="form-control" required>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <br> <br>
+            <div class="content">
+            <h4 class="ui dividing header">VM Information</h4>
+                <div class="three fields">
+                    <div class="field"> 
+                            <h5 class="ui header">OS Type</h5>
+                            <select class="ui dropdown" id="frm_os" >
+                              <option value="">Select</option>
+                              <option value="Win">Windows</option>
+                              <option value="Lin">Linux</option>
+                            </select>
+                    </div>
+                    <div class="field"> 
+                            <h5 class="ui header">Environment Type </h5>
+                            <select class="ui dropdown" id="frm_env_typ">
+                              <option value="">Select</option>
+                              <option value="PROD">Production</option>
+                              <option value="DEV">Development</option>
+                              <option value="STG">Staging</option>
+                            </select>
+                    </div>
+                    <div class="field">
+                            <h5 class="ui header">Project Owner </h5>
+                            <div class="ui labeled input" >
+                              <input type="text" id="frm_owner">
+                            </div>
+                    </div>
+                    <div class="field">
+                            <h5 class="ui header">Delivery Date </h5>
+                            <div class="ui labeled input" id="frm_env_req">
+                              <input type="date" min="2017-01-01">
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+</div>
+
