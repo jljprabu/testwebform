@@ -1,5 +1,6 @@
 ---
-- host: all
+- hosts: all
+  gather_facts: false
   tasks:
     - name: test ping
       ping:
